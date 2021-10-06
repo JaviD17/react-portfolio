@@ -1,6 +1,7 @@
 :root {
   --primary-color: #adb5bd;
   --secondary-color: #343a40;
+  --tertiary-color: #f8f9fa;
 }
 
 body {
@@ -18,7 +19,7 @@ code {
 }
 
 body {
- background-image: url('./utils/portfolio.jpg');
+ background-image: url('./utils/photos/portfolio.jpg');
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: center left;
@@ -32,12 +33,12 @@ a {
 
 h1 {
   font-size: 50px;
-  padding: 15px;
+  margin: 15px 15px 15px 50px;
 }
 
 header, footer {
   background: var(--secondary-color);
-  opacity: .7;
+  opacity: .8;
 }
 
 header {
@@ -80,4 +81,105 @@ footer {
 .footer-items {
   font-size: 40px;
   padding: 10px;
+}
+
+.about-container {
+  background-color: var(--tertiary-color);
+  margin: 40px 40px 40px 40px ;
+  opacity: .8;
+  padding: 10px;
+  border-style: double;
+  border-radius: 25px;
+  border-color: var(--secondary-color);
+}
+
+.about-icon {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.about-text {
+  margin: 20px;
+  font-size: 25px;
+}
+
+img {
+  border-radius: 12px;
+  height: 214px;
+  object-fit: cover;
+}
+
+.single-project-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+
+  /* Add empty space above the container (20% of the view height) */
+  margin-top: 5vh;
+}
+
+.single-project-card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 12px;
+}
+
+.single-project-caption {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+.single-project-link {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+
+  /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+  margin: 0 auto;
+  display: block;
+
+  /* Button is a clickable element, therefore it should have a pointer cursor */
+  cursor: pointer;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-grow: 2;
+  margin-bottom: 10vh;
+}
+
+.portfolio-title-container {
+  width: 100%;
+  background-color: var(--secondary-color);
+  opacity: .7;
+}
+
+.portfolio-title {
+  font-size: 50px;
+  text-align: center;
+  color: #65def1;
+}
+
+.portfolio-project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
 }

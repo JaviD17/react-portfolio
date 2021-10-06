@@ -1,13 +1,23 @@
 import React from "react";
 
-const Navigation = () => {
+const Navigation = ({ homeSelected, setHomeSelected }) => {
   return (
-      <nav className= "nav-body flex-row">
-        <div className="nav-item"><a href="home">About Me</a></div>
-        <div className="nav-item"><a href="portfolio">Portfolio</a></div>
-        <div className="nav-item"><a href="contact">Contact</a></div>
-        <div className="nav-item"><a href="resume">Resume</a></div>
-      </nav>
+    <nav className="nav-body flex-row">
+      <div className="nav-item">
+        <a href="#about" onClick={() => setHomeSelected(true)}>
+          About Me
+        </a>
+      </div>
+      <div className="nav-item">
+        <a href="#portfolio" onClick={() => setHomeSelected(true)}>Portfolio</a>
+      </div>
+      <div className="nav-item">
+        <a href="#contact" onClick={() => setHomeSelected(false)}>Contact</a>
+      </div>
+      <div className="nav-item">
+        <a href="#resume">Resume</a>
+      </div>
+    </nav>
   );
 };
 
