@@ -15,7 +15,7 @@ const Navigation = ({ homeSelected, setHomeSelected }) => {
         <a href="#contact" onClick={() => setHomeSelected(false)}>Contact</a>
       </div>
       <div className="nav-item">
-        <a href="#resume">Resume</a>
+        <a href="https://zety.com/profile/javier-resume">Resume</a>
       </div>
     </nav>
   );

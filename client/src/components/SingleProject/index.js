@@ -6,8 +6,6 @@ import socialNetwork from "../../assets/photos/social-network-api.jpg";
 import regexTutorial from "../../assets/photos/regex.jpg";
 
 const SingleProject = ({ categories, index }) => {
-  //   console.log(categories);
-  // src={`${categories[index].src}`}
 
   return (
     <div className="single-project-container">
